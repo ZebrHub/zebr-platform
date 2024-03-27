@@ -1,0 +1,101 @@
+.container-lateralMenu {
+    padding: 1.6em 0;
+    width: 5.6em;
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    border-right: 1px solid #ccc;
+
+    .div-img {
+        margin-bottom: 1em;
+
+        img {
+            width: 3em;
+        }
+    }
+
+    .div-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .itens {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            margin: .5em 0 0 0;
+            height: 3.5em;
+            border-radius: 8px;
+            width: 96%;
+            border: 1px solid #fff;
+
+            svg {
+                width: 1.5em;
+                margin-bottom: 2px;
+                fill: #333;
+                transition: fill .2s ease-in-out;
+
+                &:hover {
+                    fill: #111111;
+                }
+            }
+
+            p {
+                font-size: .65em;
+                font-weight: 500;
+            }
+
+            &:hover svg {
+                fill: #000;
+            }
+
+            &:hover {
+                background-color: #ebeaea;
+                border: 1px solid #bebebe;
+            }
+        }
+
+        .iten-selected {
+            background-color: #ebeaea;
+            position: relative;
+
+            /* Estilos borda externa */
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: -2px;
+                right: -5px;
+                bottom: 0px;
+                border-left: 3px solid #bebebe;
+                border-radius: 8px;
+            }
+
+            & svg {
+                fill: #000;
+            }
+        }
+    }
+
+    .div-logo-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+        img {
+            width: 4em;
+        }
+    }
+}
