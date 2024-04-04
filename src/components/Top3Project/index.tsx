@@ -7,7 +7,7 @@ export function Top3Project() {
             <div className='div-title'>
                 <h3>Top 3 |</h3> <span>Os queridinhos da Hub</span>
             </div>
-            <div className='content'>
+            <div className='top3Project-content'>
                 <ProjectTop3 />
                 <ProjectTop3 />
                 <ProjectTop3 />

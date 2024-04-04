@@ -1,20 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
 
-.container-App{
-
-    .content-App{
-        background: linear-gradient(to right, #262d46, #0e0f14);
-        margin-left: 90px;
-        height: 100vh;
-        color: #fff;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.home-content,
+.projetos-content,
+.membros-content,
+.formacao-content,
+.faq-content
+{
+    background: linear-gradient(to right, #262d46, #0e0f14);
+    margin-left: 90px;
+    height: 100vh;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
