@@ -1,0 +1,45 @@
+.project-top3 {
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid #e6e6e6;
+
+    .div-img {
+        border-radius: 8px 0 0 8px;
+        background-color: #e6e6e6;
+        width: 40%;
+        height: 100%;
+    }
+
+    .div-content {
+        padding: .3em .5em;
+        width: 60%;
+
+        p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        button {
+            background: linear-gradient(to right, #ff7802 0%, #f00001 100%);
+            background-clip: text;
+            color: transparent;
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 5px;
+            border: none;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                transition: all .3s ease-in-out;
+                background: linear-gradient(to right, #ff9437 0%, #ff2b2b 100%);
+                background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+
+    &+& {
+        margin-left: 10px;
+    }
+}
