@@ -1,46 +1,91 @@
-.lateralMenu-container {
-    padding: 1.6em 0;
-    width: 5.6em;
-    max-width: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
+.menuSuperiorCell-container {
+    background-color: #e6e6e6;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    position: absolute;
     top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1000;
-    border-right: 1px solid #ccc;
+    z-index: 1;
+    left: 3em;
+    border-radius: 0 0 10px 10px;
+    display: none;
+    cursor: pointer;
 
-    .div-img {
-        margin-bottom: 1em;
-
-        img {
-            width: 3em;
-        }
+    .menuSuperiorCell-content {
+        margin: auto;
+        border-radius: 10px;
+        width: 50px;
     }
 
-    .lateralMenu-content {
+    svg {
+        width: 40px;
+    }
+}
+
+@media (width <=580px) {
+    .menuSuperiorCell-container {
+        display: block;
+    }
+}
+
+
+// ------------------------------------------------------------------------
+
+.logo-suspensa-home {
+    position: absolute;
+    right: 1em;
+    top: .8em;
+    z-index: 1;
+
+    img {
+        width: 40px;
+    }
+}
+
+
+// ------------------------------------------------------------------------
+
+.menuInferiorCell-container {
+    width: 100vw;
+    max-height: 9vh;
+    height: 9vh;
+    display: none;
+    align-items: center;
+    max-width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 9px;
+    opacity: .8;
+    transition: opacity .4s ease-in-out;
+
+    &.show {
+        opacity: 1;
+    }
+
+    .menuInferiorCell-content {
+        display: inline-flex;
         width: 100%;
-        display: flex;
-        flex-direction: column;
         align-items: center;
 
         .itens {
             display: flex;
+            width: 22%;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            margin: 0 10px;
+            padding: 5px 0;
             transition: all .2s ease-in-out;
-            margin: .5em 0 0 0;
-            height: 3.5em;
             border-radius: 8px;
-            width: 96%;
             border: 1px solid #fff;
 
             svg {
-                width: 1.5em;
+                width: 1.3em;
                 margin-bottom: 2px;
                 fill: #333;
                 transition: fill .2s ease-in-out;
@@ -51,7 +96,7 @@
             }
 
             span {
-                font-size: .65em;
+                font-size: .60em;
                 font-weight: 500;
             }
 
@@ -89,7 +134,7 @@
 }
 
 @media (width <=580px) {
-    .lateralMenu-container {
-        display: none;
+    .menuInferiorCell-container {
+        display: flex;
     }
 }

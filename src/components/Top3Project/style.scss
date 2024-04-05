@@ -18,4 +18,10 @@
     .top3Project-content {
         display: flex;
     }
+
+    @media(width <= 830px) {
+        .top3Project-content {
+            display: block;
+        }
+    }
 }

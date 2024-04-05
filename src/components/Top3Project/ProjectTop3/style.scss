@@ -2,6 +2,7 @@
     display: flex;
     border-radius: 10px;
     border: 2px solid #e6e6e6;
+    
 
     .div-img {
         border-radius: 8px 0 0 8px;
@@ -24,7 +25,7 @@
             background-clip: text;
             color: transparent;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 16px;
             margin-top: 5px;
             border: none;
             transition: all .3s ease-in-out;
@@ -41,5 +42,32 @@
 
     &+& {
         margin-left: 10px;
+    }
+}
+
+@media (width <= 830px){
+    .projectTop3-container{
+        margin-bottom: 15px;
+        padding: 5px 10px;
+
+        &+& {
+            margin-left: 0;
+        }
+
+        .div-img{
+            background-color: red;
+        }
+
+        .projectTop3-content{
+            button{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media (width <= 576px){
+    .projectTop3-container{
+        padding: 2px 0;
     }
 }
